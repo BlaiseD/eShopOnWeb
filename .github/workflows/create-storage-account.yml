@@ -19,5 +19,7 @@ jobs:
           subscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
           resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./infra/storageaccountdeploy.bicep
-          parameters: location=eastus
+          parameters: |
+            location=eastus
+            storageName=myuniquename12012025
           failOnStdErr: false
