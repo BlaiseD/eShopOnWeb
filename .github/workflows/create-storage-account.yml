@@ -1,5 +1,5 @@
 on: [push]
-name: Azure Resource Manager
+name: Create Storage Account
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
