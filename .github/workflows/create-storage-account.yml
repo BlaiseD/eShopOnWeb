@@ -14,7 +14,7 @@ jobs:
 
         # Deploy Bicep file
       - name: deploy
-        uses: azure/arm-deploy@v1
+        uses: Azure/bicep-deploy@v2
         with:
           subscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
           resourceGroupName: ${{ secrets.AZURE_RG }}
